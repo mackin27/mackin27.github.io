@@ -1,0 +1,158 @@
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary { 
+16 	margin: 0; 
+17 	padding: 0; 
+18 	border: 0; 
+19 	font-size: 100%; 
+20 	font-weight: normal; 
+21 	vertical-align: baseline; 
+22 	background: transparent; 
+23 } 
+24 
+ 
+25 main, article, aside, figure, footer, header, nav, section, details, summary {display: block;} 
+26 
+ 
+27 /* Handle box-sizing while better addressing child elements: 
+28    http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */ 
+29 html { 
+30 	box-sizing: border-box; 
+31 } 
+32 
+ 
+33 *, 
+34 *:before, 
+35 *:after { 
+36 	box-sizing: inherit; 
+37 } 
+38 
+ 
+39 /* consider resetting the default cursor: https://gist.github.com/murtaugh/5247154 */ 
+40 
+ 
+41 /* Responsive images and other embedded objects */ 
+42 /* if you don't have full control over `img` tags (if you have to overcome attributes), consider adding height: auto */ 
+43 img, 
+44 object, 
+45 embed {max-width: 100%;} 
+46 
+ 
+47 /* 
+48    Note: keeping IMG here will cause problems if you're using foreground images as sprites. 
+49 	In fact, it *will* cause problems with Google Maps' controls at small size. 
+50 	If this is the case for you, try uncommenting the following: 
+51  
+52 #map img { 
+53 		max-width: none; 
+54 } 
+55 */ 
+56 
+ 
+57 /* force a vertical scrollbar to prevent a jumpy page */ 
+58 html {overflow-y: scroll;} 
+59 
+ 
+60 /* we use a lot of ULs that aren't bulleted. 
+61 	you'll have to restore the bullets within content, 
+62 	which is fine because they're probably customized anyway */ 
+63 ul {list-style: none;} 
+64 
+ 
+65 blockquote, q {quotes: none;} 
+66 
+ 
+67 blockquote:before, 
+68 blockquote:after, 
+69 q:before, 
+70 q:after {content: ''; content: none;} 
+71 
+ 
+72 a {margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent;} 
+73 
+ 
+74 del {text-decoration: line-through;} 
+75 
+ 
+76 abbr[title], dfn[title] {border-bottom: 1px dotted #000; cursor: help;} 
+77 
+ 
+78 /* tables still need cellspacing="0" in the markup */ 
+79 table {border-collapse: separate; border-spacing: 0;} 
+80 th {font-weight: bold; vertical-align: bottom;} 
+81 td {font-weight: normal; vertical-align: top;} 
+82 
+ 
+83 hr {display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0;} 
+84 
+ 
+85 input, select {vertical-align: middle;} 
+86 
+ 
+87 pre { 
+88     white-space: pre; /* CSS2 */ 
+89     white-space: pre-wrap; /* CSS 2.1 */ 
+90     white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */ 
+91     word-wrap: break-word; /* IE */ 
+92 } 
+93 
+ 
+94 input[type="radio"] {vertical-align: text-bottom;} 
+95 input[type="checkbox"] {vertical-align: bottom;} 
+96 .ie7 input[type="checkbox"] {vertical-align: baseline;} 
+97 .ie6 input {vertical-align: text-bottom;} 
+98 
+ 
+99 select, input, textarea {font: 99% sans-serif;} 
+100 
+ 
+101 table {font-size: inherit; font: 100%;} 
+102 
+ 
+103 small {font-size: 85%;} 
+104 
+ 
+105 strong {font-weight: bold;} 
+106 
+ 
+107 td, td img {vertical-align: top;} 
+108 
+ 
+109 /* Make sure sup and sub don't mess with your line-heights http://gist.github.com/413930 */ 
+110 sub, sup {font-size: 75%; line-height: 0; position: relative;} 
+111 sup {top: -0.5em;} 
+112 sub {bottom: -0.25em;} 
+113 
+ 
+114 /* standardize any monospaced elements */ 
+115 pre, code, kbd, samp {font-family: monospace, sans-serif;} 
+116 
+ 
+117 /* hand cursor on clickable elements */ 
+118 .clickable, 
+119 label, 
+120 input[type=button], 
+121 input[type=submit], 
+122 input[type=file], 
+123 button {cursor: pointer;} 
+124 
+ 
+125 /* Webkit browsers add a 2px margin outside the chrome of form elements */ 
+126 button, input, select, textarea {margin: 0;} 
+127 
+ 
+128 /* make buttons play nice in IE */ 
+129 button, 
+130 input[type=button] {width: auto; overflow: visible;} 
+131 
+ 
+132 /* scale images in IE7 more attractively */ 
+133 .ie7 img {-ms-interpolation-mode: bicubic;} 
+134 
+ 
+135 /* prevent BG image flicker upon hover 
+136    (commented out as usage is rare, and the filter syntax messes with some pre-processors) 
+137 .ie6 html {filter: expression(document.execCommand("BackgroundImageCache", false, true));} 
+138 */ 
+139 
+ 
+140 /* let's clear some floats */ 
+141 .clearfix:after { content: " "; display: block; clear: both; } 

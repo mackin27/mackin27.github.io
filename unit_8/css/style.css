@@ -1,0 +1,271 @@
+body {
+	font-size: 8px;
+}
+
+header {
+	background-color: #FFED74;
+	border: 1px black solid;
+	padding: 20px;
+}
+
+nav {
+	font-size: 1.5em;
+	background-color: #E8C66A;
+	border: 1px black solid;
+	padding: 20px;
+}
+
+p, #right, #left {
+	font-family: 'Roboto', sans-serif;
+	font-size: 2em;
+}
+
+h1 {
+	text-decoration: none;
+	font-size: 3em;
+	font-stretch: ultra-expanded;
+	font-weight: bold;
+	text-align: center;
+}
+
+#business{
+	background-color: lightgrey;
+    border: 10px solid red;
+    padding: 10px;
+    margin: 10px;
+}
+
+#liner{
+	text-decoration: none;
+	font-size: 3em;
+	font-style: italic;
+	font-stretch: ultra-expanded;
+	font-weight: bold;
+	color: rgb(7,87,31);
+	display: block;
+	padding-bottom: 20px;
+
+}
+
+h2, figcaption{
+	text-align: center;
+	font-size: 3em;
+	font-weight: bold;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+#slogan{
+	color: #800000;
+	font-weight: bold;
+	font-size: 3.5em;
+}
+
+h3{
+	font-stretch: ultra-expanded;
+	font-weight: bold;
+	text-align: center;
+	font-style: italic;
+	font-size: 5em;
+	color: #800000;
+	background-color: lightgrey;
+    border: 10px solid green;
+    padding: 10px;
+    margin: 10px;
+}
+
+h4{
+	font-stretch: ultra-expanded;
+	font-family: 'Mada', sans-serif;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: underline;
+	font-size: 28px;
+	color: black;
+}
+
+#two_column {
+	background-color: #FFB7CF;
+	border: 1px black solid;
+	padding: 20px;
+	margin: 15px;
+}
+
+#left{
+	width: 45%;
+	background-color: violet;
+	float: left;
+	border: 3px black solid;
+	padding: 13px;
+}
+
+#right{
+	width: 45%;
+	background-color: pink;
+	float: right;
+	border: 3px black solid;
+	padding: 14px;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+footer p{
+	text-align: center;
+	font-stretch: ultra-expanded;
+	font-weight: bold;
+	color: #800000;
+	background-color: #FF957E;
+	border: 1px black solid;
+	padding: 20px;
+}
+
+article{
+	font-size: 18px;
+	text-align: center;
+	background-color: #E89C6C;
+	border: 1px black solid;
+	padding: 20px;
+}
+
+li {
+	font-size: 2em;
+	font-family: 'Mada', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+}
+
+.nav-links{
+	display: inline-block;
+	margin-right: 32px;
+}
+
+.mini-slogan {
+	text-align: center;
+	font-weight: bold;
+	text-decoration: none;
+	font-family: 'Mada', sans-serif;
+}
+
+h2 {
+    	text-decoration: none;
+    	font-weight: bold;
+    	font-size: 5em;
+}
+
+@media screen and (max-width: 931px){
+	
+	h1 {
+		font-size: 2.2em;
+	}
+
+	#left {
+	width: 40%;
+    }
+
+    #right {
+	width: 40%;
+    }
+
+     h2 {
+    	text-decoration: none;
+    	font-weight: bold;
+    	font-size: 4em;
+    }
+}
+
+@media screen and (max-width: 755px){
+
+	h1 {
+	text-decoration: none;
+	font-size: 2em;
+    }
+
+	li {
+		font-size: 1.5em;
+	}
+}
+
+
+@media screen and (max-width: 533px){
+	
+	nav {
+		text-align: center;
+	}
+
+	h1 {
+		font-size: 2em;
+	}
+
+	#slogan {
+		font-size: 2.5em;
+    }
+
+	p, #right, #left {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.5em;
+    }
+
+
+
+	#left {
+	width: 90%;
+    }
+
+    #right {
+	width: 90%;
+    }
+
+    li {
+		font-size: 1.5em;
+	}
+
+    h2 {
+    	text-decoration: underline;
+    	font-weight: bold;
+    	font-size: 5em;
+    }
+
+    img {
+    	width: 92%
+    }
+
+    figcaption {
+    	font-weight: bold;
+    	font-size: 3em;
+    }
+
+    #liner {
+		font-size: 2em;
+	}
+
+	h2 {
+    	text-decoration: none;
+    	font-weight: bold;
+    	font-size: 3.5em;
+    }
+
+    p, #right, #left {
+		font-size: 1.5em;
+    }
+ 
+}
+
+@media screen and (max-width: 440px){
+
+    p, #right, #left {
+		font-size: 1.4em;
+    }
+
+
+}
+
